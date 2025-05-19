@@ -1,0 +1,79 @@
+/* === 1. Diretrizes Gerais da Página === */
+
+/* Define a largura geral da página em 80%, limitada a no máximo 1280px, e centraliza na tela */
+body {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Define a altura da seção de introdução em 550px */
+.intro-section {
+  height: 550px;
+}
+
+/* Remove o container #design-archives da renderização da página */
+#design-archives {
+  display: none;
+}
+
+/* === 2. Estilização do Cabeçalho === */
+
+/* Inverte as cores do cabeçalho aplicando fundo escuro e fonte clara */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+}
+
+/* Coloca título e subtítulo lado a lado com espaçamento */
+header .title-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em;
+}
+
+/* Adiciona espaçamento lateral de 1em para o título principal */
+header h1 {
+  margin-left: 1em;
+}
+
+/* === 3. Estilização dos Menus === */
+
+/* Remove os bullets dos itens de menu presentes no painel lateral */
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Aumenta o espaçamento entre os itens do menu para pelo menos 1em */
+.sidebar-menu li {
+  margin-bottom: 1em;
+}
+
+/* Centraliza os itens presentes em cada menu */
+.sidebar-menu {
+  text-align: center;
+}
+
+/* === 4. Estilização do Rodapé === */
+
+/* Aplica inversão de cores no rodapé para contraste */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2em;
+  margin: 4% 0;
+}
+
+/* Transforma cada link do rodapé em uma caixa com borda sólida de 2px e espaçamento interno de 0.5em */
+footer a {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  text-decoration: none;
+  color: #fff;
+}
