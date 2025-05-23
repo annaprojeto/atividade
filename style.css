@@ -1,38 +1,78 @@
-/* style.css */
-.page-wrapper {
-  position: relative;
-  width: 100%;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.explanation {
-  width: 60%;
-  margin-right: 35%;
-  border-right: 1px solid #1f295c;
-  padding-right: 2%;
-  box-sizing: border-box;
+section {
+  padding: 20px;
 }
 
-.design-menu {
-  position: absolute;
-  top: 560px;
-  left: 62%;
-  width: 35%;
-  padding: 0 2%;
-  box-sizing: border-box;
+.benefits-section {
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
 }
 
-@media (max-width: 1024px) {
-  .explanation,
-  .design-menu {
-    position: static;
-    width: 100%;
-    margin-right: 0;
-    border-right: none;
-    padding: 1rem;
+.benefits-text {
+  width: 70%;
+}
+
+.benefits-title {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.participation-section {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  background-color: #eef1f4;
+}
+
+.participation-item,
+.participation-title {
+  width: 50%;
+}
+
+.participation-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1f295c;
+}
+
+.main-footer a {
+  flex: 1 1 100px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #1f295c;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .benefits-section,
+  .participation-section {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .design-menu {
-    margin-top: 2rem;
-    border-top: 1px solid #1f295c;
+  .benefits-text,
+  .benefits-title,
+  .participation-item,
+  .participation-title {
+    width: 100%;
   }
 }
