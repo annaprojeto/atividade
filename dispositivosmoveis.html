@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Humanizado</title>
+  <link rel="stylesheet" href="estilo-humanizado.css">
+  <style>
+    :root {
+      --cor-destaque: #007BFF;
+      --cor-destaque-alternativa: #339AFF;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1em 2em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .menu-design li {
+      padding: 0.5em 0;
+      border-top: 1px solid #ccc;
+    }
+
+    .menu-design li:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+
+    a {
+      color: var(--cor-destaque);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--cor-destaque-alternativa);
+    }
+
+    a:visited {
+      font-weight: normal;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    main p:first-of-type::first-letter {
+      font-size: 3em;
+      font-family: 'Georgia', serif;
+      float: left;
+      padding-right: 0.1em;
+      line-height: 1;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1em;
+      margin-top: 3em;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        padding: 1em;
+      }
+
+      .menu-design {
+        position: static;
+      }
+
+      .menu-design li {
+        border-left: none;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      main p {
+        text-indent: 0;
+      }
+    }
+
+    @media print {
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #000;
+        background-color: #fff;
+      }
+
+      header {
+        background-color: #fff;
+        color: #000;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu-design">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Descubra novas formas de se conectar com o conteúdo que importa para você. Criamos este espaço com cuidado, pensando em todos os detalhes que tornam a navegação mais leve e acolhedora.</p>
+      <p>Continue explorando e veja como podemos transformar experiências digitais em algo mais humano.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Design Humanizado. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
